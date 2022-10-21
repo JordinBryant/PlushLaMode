@@ -3,11 +3,11 @@
 <h1>Dress List</h1>
 
 {% for dress in dresses %}
-<div class="card"></div>
+<div class="card">
   <a href="/dresses/{{ dress.id }}">
   <div class="card-content">
-    <span class="card-title">{{ dress.style }}</span>
-    <p>Name: {{ dress.name }}</p>
+    <span class="card-title">{{ dress.name}}</span>
+    <p>Style: {{ dress.style }}</p>
     <p>Material: {{ dress.material }}</p>
     <p>Description: {{ dress.description }}</p>
     <p>Color: {{ dress.color }}</p>

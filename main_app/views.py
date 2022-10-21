@@ -17,15 +17,15 @@ def dressess_index(request):
 
 
 class Dress:  
-  def __init__(self,style, name, material, description, color):
-    self.style = style
+  def __init__(self, name, style, material, description, color):
     self.name = name
+    self.style = style
     self.material = material
     self.description = description
     self.color = color
 
 dresses = [
-    Dress('Special Occasion', 'Lola', 'Satin', 'trendy cowl neckline with a slim-fit bodice','Taupe'),
-    Dress('Coctail', 'Malika', 'Polyester', 'Simmering sequins to sparkle under the moonlit night. V-neckline','Rose gold'),
-    Dress('Formal', 'Gabriela', 'Velvet', 'Romantic sweetheart neckline', 'Burgundy'),
+    Dress('Lola', 'Special occasion', 'Satin', 'Trendy cowl neckline with a slim-fit bodice','Taupe'),
+    Dress('Malika', 'Coctail', 'Polyester', 'Simmering sequins to sparkle under the moonlit night. V-neckline','Rose gold'),
+    Dress('Gabriela', 'Formal', 'Velvet', 'Romantic sweetheart neckline', 'Burgundy'),
 ]
