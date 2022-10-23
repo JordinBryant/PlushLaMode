@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Dress Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ dress.name }}</span>
+    <p><img src="{{dress.img_url}}" alt=""></p>
+    <p>Style: {{ dress.style }}</p>
+    <p>Material: {{ dress.material }}</p>
+    <p>Description: {{ dress.description }}</p>
+    <p>Color: {{ dress.color}}</p>
+   <section>
+    <a href="/dresses/{{ dress.id }}/accessories/new">Add Accessory</a>
+    
+   </section>
+    <section>
+        <h3>Accessories</h3>
+        <div class="accessories-container">
+            {% for acessory in accessories %}
+            <p> <img src="{{acessory.img_url}}" alt="accessory img"></p>
+            <p>Type: {{ acessory.type }}</p>
+            <p>Color: {{ acessory.color }}</p>
+            <p>Description: {{ acessory.description }}</p>
+
+            {% endfor %}     
+            
+        </div>
+    </section>
+  </div>
+</div>
+
+{% endblock %}
