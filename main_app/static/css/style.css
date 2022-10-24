@@ -1,26 +1,30 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-image: url("https://64.media.tumblr.com/51a717d34f7e4bd7e5c3c8e045ce7513/87ac7c9d2c83bda7-35/s1280x1920/82f0b5b1e492e25ff1b152b7ce58e0a2864431f5.jpg");
-    background-size: cover;
-  }
-  
-  main {
-    flex: 1 0 auto;
-  }
-  
-  footer {
-    padding-top: 0;
-    text-align: right;
-  }
-  
- 
-  #bg{
-    background-size: 1800px 900px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("https://64.media.tumblr.com/51a717d34f7e4bd7e5c3c8e045ce7513/87ac7c9d2c83bda7-35/s1280x1920/82f0b5b1e492e25ff1b152b7ce58e0a2864431f5.jpg");
+  background-size: cover;
+
 }
 
- 
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  padding-top: 0;
+  text-align: right;
+  height: 200px !important;
+}
+
+
+#bg {
+  background-size: 1800px 900px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.page-footer {
+  height: 200px;
+}
