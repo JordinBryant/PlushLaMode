@@ -1,7 +1,10 @@
 
+from dataclasses import fields
 from django import forms
 from .models import Accessory
+from .models import Wishlist
 # from .models import Review
+
 
 class AccessoryForm(forms.ModelForm):
     class Meta:
@@ -17,6 +20,14 @@ class AccessoryForm(forms.ModelForm):
 # class ReviewForm(forms.ModelForm):
 #     class Meta:
 #         model = Review
+
+#         fields = [
+#             "text"
+#         ]
+
+# class Wishlist(forms.ModelForm):
+#     class Meta:
+#         model = Wishlist
 
 #         fields = [
 #             "text"

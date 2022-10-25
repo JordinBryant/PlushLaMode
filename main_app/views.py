@@ -1,6 +1,7 @@
+from multiprocessing import context
 from django.shortcuts import render, redirect
 from .forms import AccessoryForm
-from .models import Accessory, Dress
+from .models import Accessory, Dress, Wishlist
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -118,3 +119,6 @@ def signup(request):
 #   else:
 #     form= ReviewForm()
 #   return render(request, 'reviews/add.html', {"form": form })
+
+def wishlist(request):
+    return render(request, 'new.html')
