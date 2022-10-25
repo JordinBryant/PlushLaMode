@@ -19,6 +19,7 @@ class Dress(models.Model):
     description = models.CharField(max_length=250)
     color = models.CharField(max_length=100)
     img_url = models.CharField(max_length=1000)
+    price = models.IntegerField()
     # accessories = models.ManyToManyField(Accessory)
     user = models.ForeignKey(User, on_delete=models.CASCADE) 
 
@@ -33,7 +34,19 @@ class Accessory(models.Model):
     color = models.CharField(max_length=50)
     description = models.CharField(max_length=50)
     img_url = models.CharField(max_length=1000)
+    price = models.IntegerField()
     dress = models.ForeignKey(Dress, on_delete=models.CASCADE)
 
     def get_absolute_url(self):
         return reverse('accessories_detail', kwargs={'pk': self.id})        
+
+# class Review(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     text = models.CharField(max_length=500)
+#     dress = models.ForeignKey(Dress, on_delete=models.CASCADE)
+    
+#     def __str__(self):
+#         return self.user
+    
+
+

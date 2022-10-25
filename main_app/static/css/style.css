@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-image: url("https://64.media.tumblr.com/51a717d34f7e4bd7e5c3c8e045ce7513/87ac7c9d2c83bda7-35/s1280x1920/82f0b5b1e492e25ff1b152b7ce58e0a2864431f5.jpg");
-  background-size: cover;
+  background-size:cover;
   
   
 
@@ -16,19 +16,96 @@ main {
 .footer {
   padding-top: 0;
   text-align: right;
-  height: 50px !important;
+  height: 0px !important;
   max-width: 100px;
+  
+}
+
+.nav {
+  background-color:rgb(148, 126, 134);
+  height: 80px;
+ 
 }
 
 
-/* #bg {
-  background-size: 1800px 900px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-} */
-/* 
-.page-footer {
-  height: 100px;
-  max-width: 100px;
-} */
+footer.page-footer {
+background-color: rgb(148, 126, 120);
+height: 0px;
+width:0px;
+
+}
+
+h1 {
+  font-family: 'Artisan';
+  src: url('//cdn.shopify.com/s/files/1/0594/1506/8881/t/159/assets/Artisan.otf?v=58026567071789255961666343940') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.left.brand-logo {
+    font-family: 'Quentin';
+    src: url('//cdn.shopify.com/s/files/1/0594/1506/8881/t/159/assets/Quentin.woff2?v=146842035373058627891666344055') format('woff2'),
+        url('//cdn.shopify.com/s/files/1/0594/1506/8881/t/159/assets/Quentin.woff?v=136225346195570450451666344054') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    display: flex;
+    
+  
+}
+div.row{
+  background-color: rgb(242, 211, 211);
+}
+
+a{
+  font-family: 'Quentin';
+    src: url('//cdn.shopify.com/s/files/1/0594/1506/8881/t/159/assets/Quentin.woff2?v=146842035373058627891666344055') format('woff2'),
+        url('//cdn.shopify.com/s/files/1/0594/1506/8881/t/159/assets/Quentin.woff?v=136225346195570450451666344054') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;  
+}
+
+span.card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(27, 22, 30);
+  font-weight: 800;
+  
+}
+
+p {
+  color:rgb(2, 8, 2);
+  display: flex;
+  justify-content: center;
+  background-color: gainsboro;
+}
+
+img {
+  height: 400px;
+}
+
+div.card-content {
+  height:600px;
+  width: 600px;
+}
+
+label {
+  color:rgb(0, 0, 0)
+  
+}
+
+input {
+ margin: 2px; 
+}
+
+input.btn {
+  background: rgb(72, 73, 73);
+}
+
+button {
+background-color:rgb(205, 186, 205) 
+}
