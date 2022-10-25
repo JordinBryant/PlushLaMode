@@ -52,7 +52,6 @@ def about(request):
 def dressess_index(request):
     context = {}
     context["dresses"] = Dress.objects.all()
-    # dresses = Dress.objects.filter(user=request.user)
     return render(request, 'dresses/index.html', context)
     # return render(request,'dresses/index.html', {'dresses': dresses})
 
@@ -61,7 +60,8 @@ def dressess_index(request):
 def dress_index(request):
     dresses = Dress.objects.filter(user=request.user)
     return render(request, 'dresses/index.html', {'dresses': dresses})
-
+    
+   
 
 @login_required
 def dresses_detail(request, dress_id):
@@ -84,7 +84,7 @@ def add_accessory(request, dress_id, accessory_id):
     accessory.save()
     return redirect('detail', dress_id)
 
-
+@login_required
 def all_accessories(request):
     accessories = Accessory.objects.all()
     return render(request, 'accessories/all.html', {'accessories': accessories})
